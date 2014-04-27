@@ -46,8 +46,8 @@ def CreateInstanceFromTemplate():
 	# 環境にあわせて修正してね
 	client = SoftLayer.Client(username=user_id, api_key=api_key)
 	client['Virtual_Guest'].createObject({
-        'hostname': 're-inforce_vs',
-        'domain': 'my_domain.com',
+        'hostname': 'reinforce',
+        'domain': 'mydomain.com',
         'startCpus': 1,
         'maxMemory': 1024,
         'hourlyBillingFlag': 'true',
